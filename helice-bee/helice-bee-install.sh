@@ -39,11 +39,11 @@ fi
 # ── Fetch latest version ──────────────────────────────────────────────────────
 echo "Fetching latest release..."
 LATEST_JSON=$(curl -fsSL "$PAGES_URL/latest.json")
-VERSION=$(echo "$LATEST_JSON" | python3 -c "import sys,json; print(json.load(sys.stdin)['version'])")
-DOWNLOAD_URL=$(echo "$LATEST_JSON" | python3 -c "import sys,json; print(json.load(sys.stdin)['linux']['url'])")
+VERSION=$(echo "$LATEST_JSON" | python3 -c "import sys,json; latest=json.load(sys.stdin); print(latest.get('linux', {}).get('version') or latest.get('version', ''))")
+DOWNLOAD_URL=$(echo "$LATEST_JSON" | python3 -c "import sys,json; latest=json.load(sys.stdin); print(latest.get('linux', {}).get('url', ''))")
 
 if [ -z "$DOWNLOAD_URL" ] || [ -z "$VERSION" ]; then
-    echo "Error: could not parse latest-linux.json"
+    echo "Error: could not parse Linux release info from latest.json"
     exit 1
 fi
 
