@@ -2,6 +2,8 @@
 set -e
 
 INSTALL_DIR="$HOME/.local/bin"
+ICON_DIR="$HOME/.local/share/icons/hicolor/512x512/apps"
+DESKTOP_DIR="$HOME/.local/share/applications"
 BINARY_NAME="helicebee"
 PAGES_URL="https://kop-ter.github.io/helice-bee"
 
@@ -56,6 +58,30 @@ chmod +x "$TMP"
 mkdir -p "$INSTALL_DIR"
 mv "$TMP" "$INSTALL_DIR/$BINARY_NAME"
 echo "Installed to $INSTALL_DIR/$BINARY_NAME"
+
+# ── Icon ──────────────────────────────────────────────────────────────────────
+mkdir -p "$ICON_DIR"
+curl -fsSL -o "$ICON_DIR/$BINARY_NAME.png" "$PAGES_URL/icon.png"
+
+# ── Desktop entry (taskbar / app launcher) ────────────────────────────────────
+mkdir -p "$DESKTOP_DIR"
+cat > "$DESKTOP_DIR/com.helice.helicebee.desktop" <<EOF
+[Desktop Entry]
+Name=HeliceBee
+Exec=env WEBKIT_DISABLE_COMPOSITING_MODE=1 GDK_BACKEND=x11 $INSTALL_DIR/$BINARY_NAME
+Icon=$ICON_DIR/$BINARY_NAME.png
+Type=Application
+Categories=AudioVideo;Audio;Player;
+StartupWMClass=com.helice.helicebee
+EOF
+
+# Refresh desktop/icon caches if the tools are available
+if command -v update-desktop-database &>/dev/null; then
+    update-desktop-database "$DESKTOP_DIR" 2>/dev/null || true
+fi
+if command -v gtk-update-icon-cache &>/dev/null; then
+    gtk-update-icon-cache -f -t "$HOME/.local/share/icons/hicolor" 2>/dev/null || true
+fi
 
 # ── PATH (fresh install only) ─────────────────────────────────────────────────
 if [ "$IS_UPDATE" = false ]; then
