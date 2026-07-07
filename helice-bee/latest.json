@@ -1,1 +1,23 @@
-{"version":"0.1.53","notes":"Automated Windows release from 5c1043b55bd3fc3637a93325526c24627b18ede6.","pub_date":"2026-07-07T13:28:50.944Z","platforms":{"windows-x86_64":{"signature":"dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTkJLMlFGVldPZzk5T2I3NXhrcWNwaFhsZ2d3bjAzWHV4S3lma2NhTFhqL240N1Y0Ui9BK0cwT1JWVVllK1hKZUx6UDRDN2lqbExPOFliS3JBbVFrV29raFhHcU5GY3djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDMwOTI0CWZpbGU6SGVsaWNlQmVlXzAuMS41M194NjQtc2V0dXAuZXhlCnlYSmxYR0RUWGJEZ3puVUY1bS9zTUVhMm9xRVFXVHcvbFROUEpqK1ZQcXJxUFRqL1BtaEVFWS9vb0Vtd3F5YytVWFF0MzlRRUovcXZLWWFvUU9LQkN3PT0K","url":"https://kop-ter.github.io/helice-bee/HeliceBee_0.1.53_x64-setup.exe"},"windows-x86_64-nsis":{"signature":"dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTkJLMlFGVldPZzk5T2I3NXhrcWNwaFhsZ2d3bjAzWHV4S3lma2NhTFhqL240N1Y0Ui9BK0cwT1JWVVllK1hKZUx6UDRDN2lqbExPOFliS3JBbVFrV29raFhHcU5GY3djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDMwOTI0CWZpbGU6SGVsaWNlQmVlXzAuMS41M194NjQtc2V0dXAuZXhlCnlYSmxYR0RUWGJEZ3puVUY1bS9zTUVhMm9xRVFXVHcvbFROUEpqK1ZQcXJxUFRqL1BtaEVFWS9vb0Vtd3F5YytVWFF0MzlRRUovcXZLWWFvUU9LQkN3PT0K","url":"https://kop-ter.github.io/helice-bee/HeliceBee_0.1.53_x64-setup.exe"},"windows-x86_64-msi":{"signature":"dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTkJLMlFGVldPZzA0bVVFbFNvN0xPNnFUTzdFWGtlOEw4dVhrTHpyVnFSS3hrRnF6SHFxVE1Kck55d0dEekgrUExDTXdkdzRabWFmalZDS1docmgydUVPaklxNGNqbFFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDMwOTI0CWZpbGU6SGVsaWNlQmVlXzAuMS41M194NjRfZW4tVVMubXNpCjZNVXhSdFZ1R3ViRGdKOUJVWVUza2YwZEZ2bm1ibTA1cHpUekhBMEsrWHM4a3NLNzh1T2lDOTlsektocTJMWVd1LzNUMGtjZlh0ckpsTUFHL20wVkJ3PT0K","url":"https://kop-ter.github.io/helice-bee/HeliceBee_0.1.53_x64_en-US.msi"}}}
+{
+  "version": "0.1.53",
+  "notes": "Automated Windows release from 5c1043b55bd3fc3637a93325526c24627b18ede6.",
+  "pub_date": "2026-07-07T13:28:50.944Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTkJLMlFGVldPZzk5T2I3NXhrcWNwaFhsZ2d3bjAzWHV4S3lma2NhTFhqL240N1Y0Ui9BK0cwT1JWVVllK1hKZUx6UDRDN2lqbExPOFliS3JBbVFrV29raFhHcU5GY3djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDMwOTI0CWZpbGU6SGVsaWNlQmVlXzAuMS41M194NjQtc2V0dXAuZXhlCnlYSmxYR0RUWGJEZ3puVUY1bS9zTUVhMm9xRVFXVHcvbFROUEpqK1ZQcXJxUFRqL1BtaEVFWS9vb0Vtd3F5YytVWFF0MzlRRUovcXZLWWFvUU9LQkN3PT0K",
+      "url": "https://kop-ter.github.io/helice-bee/HeliceBee_0.1.53_x64-setup.exe"
+    },
+    "windows-x86_64-nsis": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTkJLMlFGVldPZzk5T2I3NXhrcWNwaFhsZ2d3bjAzWHV4S3lma2NhTFhqL240N1Y0Ui9BK0cwT1JWVVllK1hKZUx6UDRDN2lqbExPOFliS3JBbVFrV29raFhHcU5GY3djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDMwOTI0CWZpbGU6SGVsaWNlQmVlXzAuMS41M194NjQtc2V0dXAuZXhlCnlYSmxYR0RUWGJEZ3puVUY1bS9zTUVhMm9xRVFXVHcvbFROUEpqK1ZQcXJxUFRqL1BtaEVFWS9vb0Vtd3F5YytVWFF0MzlRRUovcXZLWWFvUU9LQkN3PT0K",
+      "url": "https://kop-ter.github.io/helice-bee/HeliceBee_0.1.53_x64-setup.exe"
+    },
+    "windows-x86_64-msi": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTkJLMlFGVldPZzA0bVVFbFNvN0xPNnFUTzdFWGtlOEw4dVhrTHpyVnFSS3hrRnF6SHFxVE1Kck55d0dEekgrUExDTXdkdzRabWFmalZDS1docmgydUVPaklxNGNqbFFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDMwOTI0CWZpbGU6SGVsaWNlQmVlXzAuMS41M194NjRfZW4tVVMubXNpCjZNVXhSdFZ1R3ViRGdKOUJVWVUza2YwZEZ2bm1ibTA1cHpUekhBMEsrWHM4a3NLNzh1T2lDOTlsektocTJMWVd1LzNUMGtjZlh0ckpsTUFHL20wVkJ3PT0K",
+      "url": "https://kop-ter.github.io/helice-bee/HeliceBee_0.1.53_x64_en-US.msi"
+    }
+  },
+  "linux": {
+    "version": "0.1.53",
+    "url": "https://kop-ter.github.io/helice-bee/helicebee-linux-x86_64-v0.1.53"
+  }
+}
