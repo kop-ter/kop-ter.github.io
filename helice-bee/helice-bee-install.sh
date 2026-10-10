@@ -68,7 +68,7 @@ mkdir -p "$DESKTOP_DIR"
 cat > "$DESKTOP_DIR/com.helice.helicebee.desktop" <<EOF
 [Desktop Entry]
 Name=HeliceBee
-Exec=env WEBKIT_DISABLE_COMPOSITING_MODE=1 GDK_BACKEND=x11 $INSTALL_DIR/$BINARY_NAME
+Exec=$INSTALL_DIR/$BINARY_NAME
 Icon=$ICON_DIR/$BINARY_NAME.png
 Type=Application
 Categories=AudioVideo;Audio;Player;
